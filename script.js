@@ -240,6 +240,15 @@
       dots.forEach(function (d, i) { d.classList.toggle("on", i === si) }); copy.classList.remove("swap")
     }, 300)
   }
+  // the story changes by itself every few seconds (pauses on hover / focus / hidden tab)
+  var storyHold = false, storyBox = $(".story")
+  if (storyBox && !reduce) {
+    storyBox.addEventListener("mouseenter", function () { storyHold = true })
+    storyBox.addEventListener("mouseleave", function () { storyHold = false })
+    storyBox.addEventListener("focusin", function () { storyHold = true })
+    storyBox.addEventListener("focusout", function () { storyHold = false })
+    setInterval(function () { if (!storyHold && !document.hidden) show(si + 1) }, 5500)
+  }
   if ($("#sPrev")) $("#sPrev").addEventListener("click", function () { show(si - 1) })
   if ($("#sNext")) $("#sNext").addEventListener("click", function () { show(si + 1) })
   dots.forEach(function (d, i) { d.addEventListener("click", function () { show(i) }) })

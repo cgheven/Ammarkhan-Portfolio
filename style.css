@@ -604,3 +604,13 @@ body.page-contact{overflow-x:clip}
 .wk-cap b{font-size:15px;font-weight:600;letter-spacing:-.02em;line-height:1.3}
 @media (max-width:900px){.wk-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.wk-grid{gap:12px}.wk-cap{padding:12px 12px 14px}}
+
+/* smaller, calmer image cards */
+.uic{max-width:430px}
+.uic-img{aspect-ratio:16/10}
+.uic-img.tall{aspect-ratio:4/3.1}
+.uic-img.dark{aspect-ratio:16/9}
+.uic-chips li{padding:6px 12px;font-size:12.5px}
+.uic-rows li{padding:11px 14px}
+.uic.photo .uic-h{margin-top:16px;margin-bottom:10px}
+.tilt{filter:drop-shadow(0 24px 40px rgba(0,0,0,.5))}
