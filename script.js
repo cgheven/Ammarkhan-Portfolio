@@ -114,7 +114,7 @@
   /* ---------- scroll-driven effects ---------- */
   var nav = $("#nav"), vh = window.innerHeight
   var strip = $$(".tcard"), pars = $$("[data-par]"), tilts = $$(".tilt"), zooms = $$(".uic-img,.post-img img")
-  var pill = $("#pillText"), pillMap = [["#home", "Hi there! 👋"], ["#about", "About me"], ["#whatido", "What I do"], ["#ventures", "My ventures"], ["#hire", "Need custom VFX?"], ["#story", "My story"], ["#connect", "Follow along"], ["#contact", "Click to chat"]]
+  var pill = $("#pillText"), pillMap = [["#home", "Hi there! 👋"], ["#about", "About me"], ["#whatido", "What I do"], ["#ventures", "My ventures"], ["#hire", "Need custom VFX?"], ["#story", "My story"], ["#connect", "Follow along"], ["#contact", "Start a project"]]
   var pillNow = pillMap[0][1], ticking = false
 
   function setPill(t) {
@@ -205,13 +205,17 @@
         c.style.transform = "translateY(" + ty.toFixed(1) + "px) rotate(" + rot.toFixed(2) + "deg) scale(" + sc.toFixed(3) + ")"
       })
     }
-    function tick() {
+    var pos = 0, last = 0
+    function tick(now) {
       arc()
-      if (!paused && !down && !reduce) reel.scrollLeft += .6
-      var h = half(); if (reel.scrollLeft >= h) reel.scrollLeft -= h; else if (reel.scrollLeft <= 0 && down) reel.scrollLeft += h
+      var dt = last ? Math.min(64, now - last) : 16; last = now
+      var h = half()
+      if (!paused && !down && !reduce) { pos += dt * 0.045; if (pos >= h) pos -= h; reel.scrollLeft = pos }
+      else pos = reel.scrollLeft
+      if (reel.scrollLeft >= h) { reel.scrollLeft -= h; pos = reel.scrollLeft } else if (reel.scrollLeft <= 0 && down) { reel.scrollLeft += h; pos = reel.scrollLeft }
       requestAnimationFrame(tick)
     }
-    reel.scrollLeft = 1; requestAnimationFrame(tick)
+    requestAnimationFrame(tick)
   })()
 
   /* ---------- mobile menu ---------- */
