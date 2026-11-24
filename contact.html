@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Ammar Khan</title>
+<meta name="description" content="Get in touch with Ammar Khan for custom VFX, VDBs, brand content, partnerships or general questions.">
+<meta name="theme-color" content="#07090D">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Victor+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-contact">
+<canvas id="stars" aria-hidden="true"></canvas>
+<header class="nav" id="nav">
+  <a class="nav-logo" href="index.html" aria-label="Ammar Khan, home"><span class="mark sm" aria-hidden="true"><i></i><i></i></span>ammarkhan</a>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a class="nav-link" href="index.html#home">Home</a>
+    <a class="nav-link" href="index.html#about">About</a>
+    <a class="nav-link" href="index.html#whatido">What I Do</a>
+    <a class="nav-link" href="index.html#ventures">Ventures</a>
+    <a class="nav-link" href="index.html#hire">Hire</a>
+    <a class="nav-link" href="contact.html" aria-current="page" style="color:#fff">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <a class="nav-pill" href="index.html#contact"><span class="dot"></span><span id="pillText">Let's talk</span></a>
+    <a class="nav-cta" href="index.html#hire"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z"/></svg>Hire Me</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+<main id="top">
+  <section class="ct-hero">
+    <div class="wrap">
+      <span class="eyebrow-blue ctl">Contact</span>
+      <h1 class="h-xl ctl">Let's talk.</h1>
+      <p class="ct-sub ctl">Have a project, a partnership or just a hello? Tell me what you need and I'll get back to you. I reply within 2 working days.</p>
+    </div>
+  </section>
+
+  <section class="ct">
+    <div class="wrap ct-grid">
+      <div class="ct-info">
+        <a class="ct-card rv" href="https://www.upwork.com/freelancers/~01cef6a1965f6ab3e3?mp_source=share" target="_blank" rel="noopener"><span class="chip c-green">Available for projects</span><h3>Hire me</h3><p>Custom simulations, VDBs for 3D scenes and brand content, made for your shot. Prefer Upwork? Hire me there.</p><span class="go">Hire me on Upwork <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="ct-card rv" href="mailto:contact@cgheven.com"><span class="chip c-blue">Email</span><h3>contact@cgheven.com</h3><p>Projects, jobs and general questions.</p><span class="go">Write to me <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="ct-card rv" href="mailto:partners@cgheven.com"><span class="chip c-indigo">Partnerships</span><h3>partners@cgheven.com</h3><p>Brand or software partnerships.</p><span class="go">Partner with CGHEVEN <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a class="ct-card rv" href="mailto:support@cgheven.com"><span class="chip c-pink">Support</span><h3>support@cgheven.com</h3><p>Bug reports, purchase or billing issues and privacy requests, for CGHEVEN and HavenPlayer.</p><span class="go">Contact support <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+
+      <form class="ct-form rv" id="ctForm" novalidate>
+        <h2>Tell me about your project</h2>
+        <label>Your name<input type="text" name="name" autocomplete="name" required placeholder="Your name"></label>
+        <label>Your email<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label>What do you need?
+          <select name="need"><option>Custom simulation</option><option>VDBs</option><option>Brand content</option><option>Something else</option></select>
+        </label>
+        <label>Budget
+          <select name="budget"><option>Under $250</option><option>$250 – $1,000</option><option>$1,000+</option></select>
+        </label>
+        <label>Message<textarea name="message" rows="6" required placeholder="Tell me about your shot or project"></textarea></label>
+        <p class="ct-err" id="ctErr" role="alert" hidden>Please add your name, a valid email and a message.</p>
+        <button class="btn-primary" type="submit">Send message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <p class="ct-note">This opens your email app with the message ready to send. I reply within 2 working days.</p>
+      </form>
+    </div>
+  </section>
+
+  <section class="ct-follow">
+    <div class="wrap">
+      <div class="head-center rv"><span class="eyebrow-blue">Follow along</span><h2 class="h-xl">Find me online.</h2></div>
+      <div class="fc-social ct-social">
+      <a href="https://www.instagram.com/ammarkhaanim/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+      <a href="https://www.linkedin.com/in/ammarkhanim" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+      <a href="https://www.facebook.com/Ammarkhanim/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5h1.65V3.7c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.15v2.15H7.6V13h2.7v8z"/></svg></a>
+      <a href="https://youtube.com/@cghevenofficial" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+      <a href="https://x.com/ammarkhaanim" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zM16.7 19.1h1.7L7.4 4.8H5.6z"/></svg></a>
+      <a href="https://tiktok.com/@ammarkhaanim" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.1c0 5.6-6.1 7.4-9.1 3.3-1.9-2.7-.8-7.4 3.7-7.5v3.3c-.4.1-.8.2-1.2.4-1.2.5-1.4 2.3-.4 3.1 1.1.9 3 .2 3.2-1.6V3z"/></svg></a>
+    </div>
+    </div>
+  </section>
+</main>
+<footer class="footer" id="site-footer">
+  <div class="fc">
+    <h2 class="fc-statement" id="footerStatement" data-text="Great VFX should be [[for everyone.]]"></h2>
+    <a class="fc-btn" href="contact.html">Start a project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="fc-logo nav-logo" href="index.html" aria-label="Back to top"><span class="mark sm" aria-hidden="true"><i></i><i></i></span>ammarkhan</a>
+    <nav class="fc-links" aria-label="Footer">
+      <a href="index.html#about">About</a><a href="index.html#whatido">What I Do</a><a href="index.html#ventures">Ventures</a><a href="index.html#hire">Hire</a><a href="index.html#story">Story</a><a href="index.html#connect">Connect</a><a href="mailto:contact@cgheven.com">Contact</a>
+    </nav>
+    <nav class="fc-links sub" aria-label="Ventures and legal">
+      <a href="https://cgheven.com" target="_blank" rel="noopener">CGHEVEN</a><a href="https://www.hevenplay.com/" target="_blank" rel="noopener">HavenPlayer</a><a href="https://cgheven.com/tutorials" target="_blank" rel="noopener">Tutorials</a><a href="https://cgheven.com/privacy-policy" target="_blank" rel="noopener">Privacy</a><a href="https://cgheven.com/terms-conditions" target="_blank" rel="noopener">Terms</a>
+    </nav>
+    <div class="fc-social">
+      <a href="https://www.instagram.com/ammarkhaanim/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+      <a href="https://www.linkedin.com/in/ammarkhanim" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+      <a href="https://www.facebook.com/Ammarkhanim/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5h1.65V3.7c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.15v2.15H7.6V13h2.7v8z"/></svg></a>
+      <a href="https://youtube.com/@cghevenofficial" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+      <a href="https://x.com/ammarkhaanim" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zM16.7 19.1h1.7L7.4 4.8H5.6z"/></svg></a>
+      <a href="https://tiktok.com/@ammarkhaanim" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.1c0 5.6-6.1 7.4-9.1 3.3-1.9-2.7-.8-7.4 3.7-7.5v3.3c-.4.1-.8.2-1.2.4-1.2.5-1.4 2.3-.4 3.1 1.1.9 3 .2 3.2-1.6V3z"/></svg></a>
+    </div>
+    <p class="fc-line">Ammar Khan · Founder of CGHEVEN and HavenPlayer · <a href="mailto:contact@cgheven.com">contact@cgheven.com</a> · &copy; <span id="year">2026</span></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

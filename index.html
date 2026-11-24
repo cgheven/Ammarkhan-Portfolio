@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ammar Khan | VFX Artist &amp; Founder of CGHEVEN</title>
+<meta name="description" content="Ammar Khan is a VFX artist specialising in volumetric simulations. Founder of CGHEVEN and HavenPlayer.">
+<meta property="og:title" content="Ammar Khan | VFX Artist &amp; Founder of CGHEVEN">
+<meta property="og:description" content="VFX artist. Founder of CGHEVEN and HavenPlayer.">
+<meta property="og:image" content="assets/ammar-khan.jpg">
+<meta name="theme-color" content="#07090D">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Victor+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- INTRO -->
+<div class="intro" id="intro" role="button" tabindex="0" aria-label="Click to enter">
+  <canvas id="introCanvas" aria-hidden="true"></canvas>
+  <div class="intro-center">
+    <span class="mark" aria-hidden="true"><i></i><i></i></span>
+    <span class="intro-name">ammarkhan</span>
+  </div>
+  <span class="intro-hint">Click to enter</span>
+</div>
+
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#top" aria-label="Ammar Khan, home"><span class="mark sm" aria-hidden="true"><i></i><i></i></span>ammarkhan</a>
+  <nav class="nav-links" id="navLinks" aria-label="Main">
+    <a class="nav-link" href="#home">Home</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#whatido">What I Do</a>
+    <a class="nav-link" href="#ventures">Ventures</a>
+    <a class="nav-link" href="#hire">Hire</a>
+    <a class="nav-link" href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-end">
+    <a class="nav-pill" href="#contact"><span class="dot"></span><span id="pillText">Hi there! 👋</span></a>
+    <a class="nav-cta" href="#hire"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z"/></svg>Hire Me</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas class="hero-globe" id="globe" aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-orbs" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i></div>
+  <p class="hero-label">VFX Artist · CG Educator · Founder of CGHEVEN &amp; HavenPlayer</p>
+  <h1 class="hero-headline"><span class="hl">Hi, I'm Ammar Khan.</span><span class="hl">I make VFX for <em class="grad">everyone.</em></span></h1>
+  <p class="hero-sub">A VFX artist specialising in volumetric simulations. I make every effect on CGHEVEN and teach how to use them, free.</p>
+  <div class="hero-actions">
+    <a class="btn-primary" href="#hire">Hire me <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="btn-ghost" href="#whatido"><u>See what I do</u> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <ul class="trust"><li>CGHEVEN</li><li>HavenPlayer</li><li>Tutorials</li><li>Collections</li><li>Apps &amp; Add-ons</li></ul>
+
+  <div class="reel" id="reel" aria-label="Selected work"><div class="reel-track" id="reelTrack"><figure class="rcard2 brand" data-href="https://cgheven.com" tabindex="0" role="link" aria-label="CGHEVEN"><div class="rc-art"><img class="logo" src="assets/cgheven-logo.png" alt="" draggable="false"></div><figcaption><b>CGHEVEN</b><small>Free CC0 VFX library</small></figcaption></figure><figure class="rcard2 tut" data-href="https://cgheven.com/tutorials" tabindex="0" role="link" aria-label="Tutorials"><img src="assets/img/tut-fire-vdb.webp" alt="" draggable="false"><figcaption><b>Tutorials</b><small>Free lessons &amp; courses</small></figcaption></figure><figure class="rcard2 games" data-href="https://www.hevenplay.com/" tabindex="0" role="link" aria-label="HavenPlayer"><div class="rc-art"><img class="logo" src="assets/hevenplay-logo.png" alt="" draggable="false"></div><figcaption><b>HavenPlayer</b><small>Casual Android games</small></figcaption></figure><figure class="rcard2 collection" data-href="https://cgheven.com/collections" tabindex="0" role="link" aria-label="Collections"><div class="rc-art"><img class="contain" src="assets/img/collection-1.webp" alt="" draggable="false"></div><figcaption><b>Collections</b><small>Themed VFX packs</small></figcaption></figure><figure class="rcard2 addons" data-href="https://cgheven.com/addons" tabindex="0" role="link" aria-label="Apps &amp; Add-ons"><div class="rc-art"><ul class="rc-chips"><li>Blender</li><li>Houdini</li><li>Unreal</li><li>Maya</li><li>DaVinci</li><li>Godot</li></ul></div><figcaption><b>Apps &amp; Add-ons</b><small>8 add-ons · 3 Android apps</small></figcaption></figure></div></div>
+</section>
+
+<!-- STATEMENT -->
+<section class="statement" id="about">
+  <div class="statement-inner">
+    <p class="statement-text" id="statementText" data-text="I'm Ammar Khan, a VFX artist specialising in volumetric simulations. I started CGHEVEN so every creator can have the same tools as a studio in Hollywood: [[free effects,]] free add-ons and free tutorials, [[built as one mission.]]"></p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="whatido about2" id="about-cards">
+  <div class="wrap">
+    <div class="wid-head rv">
+      <span class="eyebrow-blue">About me</span>
+      <h2 class="h-xl">The artist behind CGHEVEN.</h2>
+    </div>
+
+    <article class="block">
+      <div class="block-copy rv">
+        <h3 class="h-lg">Ammar Khan</h3>
+        <p>I'm a VFX artist who specialises in volumetric simulations, and the founder of CGHEVEN and HavenPlayer. I make every effect on CGHEVEN myself, in-house: nothing scraped, nothing resold.</p>
+        <p>CGHEVEN was created to give the global CG community high-quality, affordable CG assets: VDBs, VFX elements, 3D models, HDRIs and textures. My mission is to make professional-grade tools accessible to every creator, regardless of budget.</p>
+        <p>Alongside the assets, I teach how to use them in free tutorials and courses, build free add-ons for creative apps, and run HavenPlayer, the games side of CGHEVEN.</p>
+        <ul class="checks"><li>VFX Artist</li><li>Volumetric Simulation</li><li>Founder · CGHEVEN</li><li>Founder · HavenPlayer</li><li>Free Tutorials</li><li>Custom VFX</li></ul>
+        <a class="learn" href="https://cgheven.com/ammar-khan" target="_blank" rel="noopener">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt">
+        <div class="uic photo">
+          <img class="uic-img tall" src="assets/ammar-khan.jpg" alt="Ammar Khan">
+          <div class="uic-h"><b>Ammar Khan</b><small>Founder · VFX artist</small></div>
+          <ul class="uic-chips"><li>Volumetric simulations</li><li>CGHEVEN</li><li>HavenPlayer</li><li>Free tutorials</li></ul>
+        </div></div></div></div>
+    </article>
+
+    <article class="block flip">
+      <div class="block-copy rv">
+        <h3 class="h-lg">Why I started CGHEVEN</h3>
+        <p>A student should have the same tools as a studio in Hollywood. But good VFX assets were locked behind expensive packs, and most artists I knew, especially students, could not afford them.</p>
+        <p>So I started simulating effects myself and sharing them for free. People around the world began using them in their edits, ads and films, and that is how CGHEVEN grew.</p>
+        <p>Today it is a library of real VFX with free 1K and 2K downloads, free add-ons for 8 apps and free tutorials. Pro keeps it running.</p>
+        <ul class="checks"><li>Free CC0 Library</li><li>Free 1K &amp; 2K</li><li>Free Add-ons</li><li>Free Tutorials</li></ul>
+        <a class="learn" href="https://cgheven.com" target="_blank" rel="noopener">Visit CGHEVEN <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt rev">
+        <div class="uic">
+          <div class="uic-h"><b>The story</b><small>3 steps</small></div>
+          <ul class="uic-rows storyrows">
+            <li><span class="pl">1</span><div><b>The problem</b><small>Good VFX assets were locked behind expensive packs.</small></div></li>
+            <li><span class="pl">2</span><div><b>So I made my own</b><small>I simulated effects and shared them for free.</small></div></li>
+            <li><span class="pl">3</span><div><b>CGHEVEN today</b><small>Free 1K and 2K, free add-ons, free tutorials.</small></div></li>
+          </ul>
+        </div></div></div></div>
+    </article>
+
+    <article class="block">
+      <div class="block-copy rv">
+        <h3 class="h-lg">How I work</h3>
+        <p>Every effect starts as a real simulation. For 3D scenes I simulate volumes in Houdini and deliver them as OpenVDB, so they drop straight into Blender, Houdini, Maya, Unreal Engine and renderers like Cycles, Octane, Redshift and Arnold.</p>
+        <p>For edits and films, the same effects come as ready-to-use video in MP4, ProRes 4444 and EXR, with green screen versions and 1K, 2K and 4K options.</p>
+        <ul class="checks"><li>In-house Simulation</li><li>Houdini</li><li>OpenVDB</li><li>ProRes 4444 · EXR</li></ul>
+        <a class="learn" href="https://cgheven.com/assets" target="_blank" rel="noopener">See the work <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt">
+        <div class="uic photo">
+          <img class="uic-img" src="assets/img/tut-fire-vdb.webp" alt="Ammar Khan simulating fire in 3D software">
+          <div class="uic-h"><b>Simulated in-house</b><small>Smoke · fire · explosions</small></div>
+          <ul class="uic-chips"><li>MP4</li><li>ProRes 4444</li><li>EXR</li><li>Green Screen</li><li>VDB</li></ul>
+        </div></div></div></div>
+    </article>
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section class="whatido" id="whatido">
+  <div class="wrap">
+    <div class="wid-head rv">
+      <span class="eyebrow-blue">What I do</span>
+      <h2 class="h-xl">VFX, teaching and tools,<br>built as one mission.</h2>
+    </div>
+
+    <article class="block">
+      <div class="block-copy rv">
+        <h3 class="h-lg">VFX &amp; Simulation</h3>
+        <p>Every effect on CGHEVEN is simulated in-house by me. Smoke plumes, ground fire, explosions, steam and holograms, ready to drop into your shot.</p>
+        <p>For 3D scenes, I simulate volumes in Houdini and deliver them as OpenVDB, so they work in Blender, Houdini, Maya, Unreal Engine and renderers like Cycles, Octane, Redshift and Arnold.</p>
+        <ul class="checks"><li>Smoke &amp; Fire</li><li>Explosions</li><li>Steam &amp; Holograms</li><li>VDB Volumes</li><li>3D Models &amp; HDRIs</li><li>PBR Textures</li></ul>
+        <a class="learn" href="https://cgheven.com/assets" target="_blank" rel="noopener">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt">
+        <div class="uic photo"><img class="uic-img dark" src="assets/img/vfx-explosion.webp" alt="Aerial explosion simulated by Ammar Khan"><div class="uic-h"><b>Delivery formats</b><small>Every effect</small></div>
+          <ul class="uic-chips"><li>MP4</li><li>H.264</li><li>ProRes 4444</li><li>EXR</li><li>Green Screen</li></ul>
+          <div class="uic-h"><b>Resolutions</b><small>1K and 2K free</small></div>
+          <ul class="uic-chips"><li>1K</li><li>2K</li><li>4K</li></ul>
+          <div class="uic-h"><b>Works in</b><small>Software &amp; renderers</small></div>
+          <ul class="uic-chips"><li>Blender</li><li>Houdini</li><li>Maya</li><li>Unreal Engine</li><li>Cycles</li><li>Octane</li><li>Redshift</li><li>Arnold</li></ul>
+        </div></div></div></div>
+    </article>
+
+    <article class="block flip">
+      <div class="block-copy rv">
+        <h3 class="h-lg">Teaching</h3>
+        <p>I teach how every effect is made, so you can make your own. Short lessons and full courses, free for everyone.</p>
+        <p>Step by step, from your first edit to character animation, with every class free to start.</p>
+        <ul class="checks"><li>Short Lessons</li><li>Full Courses</li><li>CapCut</li><li>Cascadeur</li></ul>
+        <a class="learn" href="https://cgheven.com/courses" target="_blank" rel="noopener">Start learning <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt rev">
+        <div class="uic photo"><img class="uic-img" src="assets/img/tut-cascadeur.webp" alt="Cascadeur animation course" style="aspect-ratio:16/8"><div class="uic-h"><b>Free courses</b><small>Step-by-step</small></div>
+          <ul class="uic-rows">
+            <li><span class="pl">&#9654;</span><div><b>CapCut for Beginners</b><small>Free course</small></div></li>
+            <li><span class="pl">&#9654;</span><div><b>Edits by Meta</b><small>Free course</small></div></li>
+            <li><span class="pl">&#9654;</span><div><b>Cascadeur Animation</b><small>Free course</small></div></li>
+          </ul>
+          <a class="uic-link" href="https://youtube.com/@cghevenofficial" target="_blank" rel="noopener">Watch on YouTube <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div></div></div></div>
+    </article>
+
+    <article class="block">
+      <div class="block-copy rv">
+        <h3 class="h-lg">Add-ons &amp; Apps</h3>
+        <p>I build free add-ons so CGHEVEN assets can be browsed and imported without leaving your software, plus Android apps for creators.</p>
+        <p>Add-ons for 8 creative apps, and three apps on Google Play.</p>
+        <ul class="checks"><li>8 Free Add-ons</li><li>Android Apps</li><li>Casual Games</li><li>Built in Godot 4</li></ul>
+        <a class="learn" href="https://cgheven.com/addons" target="_blank" rel="noopener">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv"><div class="tw" data-par="0.05"><div class="tilt">
+        <div class="uic photo"><img class="uic-img" src="assets/img/phone-hero.jpg" alt="CGHEVEN Android app" style="object-position:center top;aspect-ratio:16/8"><div class="uic-h"><b>Free add-ons</b><small>8 apps</small></div>
+          <ul class="uic-chips"><li>Blender</li><li>DaVinci Resolve</li><li>After Effects</li><li>Premiere Pro</li><li>Godot Engine</li><li>Houdini</li><li>Autodesk Maya</li><li>Unreal Engine</li></ul>
+          <div class="uic-h"><b>On Google Play</b><small>Android</small></div>
+          <ul class="uic-rows">
+            <li><span class="pl sq"></span><div><b>CGHEVEN – VFX Effects Library</b></div></li>
+            <li><span class="pl sq"></span><div><b>PBR Creator – Texture Maker</b></div></li>
+            <li><span class="pl sq"></span><div><b>Smart Background Remover</b></div></li>
+          </ul>
+        </div></div></div></div>
+    </article>
+
+    <div class="head-left rv"><span class="eyebrow-blue">What I believe</span><h3 class="h-md">Free stays free. Made by me.</h3></div>
+    <div class="trio">
+      <article class="tcol rv"><span class="num">01</span><h3>Free stays free</h3><p>The free assets, all 8 add-ons and every tutorial stay free. Anything paid only adds to it and never takes something away.</p></article>
+      <article class="tcol rv"><span class="num">02</span><h3>Made by me</h3><p>Every effect is simulated in-house by me. Nothing scraped, nothing resold.</p></article>
+      <article class="tcol rv"><span class="num">03</span><h3>Made for everyone</h3><p>Professional-grade tools should be within reach of every creator, whatever their budget.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- VENTURES -->
+<section class="venture" id="ventures">
+  <div class="wrap">
+    <div class="head-center rv"><span class="eyebrow-blue">Ventures</span><h2 class="h-xl">What I'm building.</h2></div>
+    <article class="block">
+      <div class="block-copy rv">
+        <span class="eyebrow-blue">Founder · CGHEVEN</span>
+        <h3 class="h-lg">CGHEVEN</h3>
+        <p>The platform I built for creators who can't afford expensive packs: a library of real VFX, free add-ons for 8 creative apps and free tutorials.</p>
+        <p>The free library is CC0, so anyone can use it in any project with no credit needed.</p>
+        <a class="learn" href="https://cgheven.com" target="_blank" rel="noopener">Visit CGHEVEN <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv">
+        <div class="offer" data-par="0.04">
+          <div class="offer-head"><img src="assets/cgheven-logo.png" alt="" width="48" height="48"><div><b>CGHEVEN</b><small>cgheven.com</small></div></div>
+          <ul class="offer-list">
+            <li><b>Role</b><span>Founder</span></li>
+            <li><b>Library</b><span>Free CC0 VFX, VDBs, 3D, HDRIs</span></li>
+            <li><b>Add-ons</b><span>8 apps · free</span></li>
+            <li><b>Tutorials</b><span>Free lessons and courses</span></li>
+            <li><b>Apps</b><span>3 Android apps on Google Play</span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class="block flip">
+      <div class="block-copy rv">
+        <span class="eyebrow-blue">Founder · HavenPlayer</span>
+        <h3 class="h-lg">HavenPlayer</h3>
+        <p>The mobile games division of CGHEVEN: casual and relaxing Android games made to be picked up and enjoyed at your own pace.</p>
+        <p>Each game is built in Godot 4 and published on Google Play. No account is needed to play.</p>
+        <a class="learn" href="https://www.hevenplay.com/" target="_blank" rel="noopener">Visit HavenPlayer <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="block-media rv">
+        <div class="offer" data-par="0.04">
+          <div class="offer-head"><img src="assets/hevenplay-logo.png" alt="" width="48" height="48"><div><b>HavenPlayer</b><small>CGHEVEN Games · hevenplay.com</small></div></div>
+          <ul class="offer-list">
+            <li><b>Role</b><span>Founder</span></li>
+            <li><b>Genre</b><span>Casual and relaxing</span></li>
+            <li><b>Platform</b><span>Android</span></li>
+            <li><b>Engine</b><span>Godot 4</span></li>
+            <li><b>Published on</b><span>Google Play</span></li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- HIRE -->
+<section class="hire" id="hire">
+  <div class="wrap">
+    <div class="hire-card rv">
+      <div class="hire-copy">
+        <span class="eyebrow-green">Available for projects</span>
+        <h2 class="h-xl">Need custom VFX? Hire me.</h2>
+        <p>The same effects you see on CGHEVEN, made for your shot.</p>
+        <ul class="checks one">
+          <li><b>Custom simulations</b> · smoke, fire, explosions and destruction</li>
+          <li><b>VDBs for 3D scenes</b> · ready for Blender, Unreal, Houdini and C4D</li>
+          <li><b>Brand content</b> · product shots, ads and tutorials</li>
+        </ul>
+      </div>
+      <div class="hire-act">
+        <a class="btn-primary" href="https://www.upwork.com/freelancers/~01cef6a1965f6ab3e3?mp_source=share" target="_blank" rel="noopener">Hire me on Upwork <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn-ghost" href="contact.html"><u>Send a message</u></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story" id="story">
+  <div class="story-grid">
+    <div class="story-copy">
+      <h2 class="h-xl" id="storyTitle">The problem.</h2>
+      <p class="story-p" id="storyText">Good VFX assets were locked behind expensive packs. Most artists I knew, especially students, could not afford them.</p>
+      <div class="story-dots" id="storyDots"><i class="on"></i><i></i><i></i></div>
+    </div>
+    <div class="story-media rv">
+      <div class="story-frame"><img src="assets/ammar-khan.jpg" alt="Ammar Khan"><span class="story-badge">Founder · CGHEVEN</span></div>
+      <div class="arrows"><button id="sPrev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button id="sNext" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONNECT -->
+<section class="connect" id="connect">
+  <div class="wrap-wide">
+    <div class="head-center rv"><span class="eyebrow-blue">Connect</span><h2 class="h-xl">Follow along.</h2></div>
+    <div class="ccards">
+      <a class="ccard rv" href="https://youtube.com/@cghevenofficial" target="_blank" rel="noopener"><span class="cc-ic">YT</span><div><small>YouTube</small><b>@cghevenofficial</b></div><span class="cc-go">→</span></a>
+      <a class="ccard rv" href="https://www.instagram.com/ammarkhaanim/" target="_blank" rel="noopener"><span class="cc-ic">IG</span><div><small>Instagram</small><b>@ammarkhaanim</b></div><span class="cc-go">→</span></a>
+      <a class="ccard rv" href="https://tiktok.com/@ammarkhaanim" target="_blank" rel="noopener"><span class="cc-ic">TT</span><div><small>TikTok</small><b>@ammarkhaanim</b></div><span class="cc-go">→</span></a>
+      <a class="ccard rv" href="https://x.com/ammarkhaanim" target="_blank" rel="noopener"><span class="cc-ic">X</span><div><small>X</small><b>@ammarkhaanim</b></div><span class="cc-go">→</span></a>
+      <a class="ccard rv" href="https://www.linkedin.com/in/ammarkhanim" target="_blank" rel="noopener"><span class="cc-ic">in</span><div><small>LinkedIn</small><b>ammarkhanim</b></div><span class="cc-go">→</span></a>
+      <a class="ccard rv" href="https://www.facebook.com/Ammarkhanim/" target="_blank" rel="noopener"><span class="cc-ic">f</span><div><small>Facebook</small><b>Ammarkhanim</b></div><span class="cc-go">→</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER / CTA -->
+<footer class="footer" id="contact">
+  <div class="fc">
+    <h2 class="fc-statement" id="footerStatement" data-text="Great VFX should be [[for everyone.]]"></h2>
+    <a class="fc-btn" href="contact.html">Start a project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="fc-logo nav-logo" href="#top" aria-label="Back to top"><span class="mark sm" aria-hidden="true"><i></i><i></i></span>ammarkhan</a>
+    <nav class="fc-links" aria-label="Footer">
+      <a href="#about">About</a><a href="#whatido">What I Do</a><a href="#ventures">Ventures</a><a href="#hire">Hire</a><a href="#story">Story</a><a href="#connect">Connect</a><a href="mailto:contact@cgheven.com">Contact</a>
+    </nav>
+    <nav class="fc-links sub" aria-label="Ventures and legal">
+      <a href="https://cgheven.com" target="_blank" rel="noopener">CGHEVEN</a><a href="https://www.hevenplay.com/" target="_blank" rel="noopener">HavenPlayer</a><a href="https://cgheven.com/tutorials" target="_blank" rel="noopener">Tutorials</a><a href="https://cgheven.com/privacy-policy" target="_blank" rel="noopener">Privacy</a><a href="https://cgheven.com/terms-conditions" target="_blank" rel="noopener">Terms</a>
+    </nav>
+    <div class="fc-social">
+      <a href="https://www.instagram.com/ammarkhaanim/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></a>
+      <a href="https://www.linkedin.com/in/ammarkhanim" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.12V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg></a>
+      <a href="https://www.facebook.com/Ammarkhanim/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.55-1.5h1.65V3.7c-.3 0-1.25-.1-2.4-.1-2.4 0-4 1.45-4 4.15v2.15H7.6V13h2.7v8z"/></svg></a>
+      <a href="https://youtube.com/@cghevenofficial" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+      <a href="https://x.com/ammarkhaanim" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8zM16.7 19.1h1.7L7.4 4.8H5.6z"/></svg></a>
+      <a href="https://tiktok.com/@ammarkhaanim" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 3c.3 2.3 1.6 3.7 3.9 3.9v3.1c-1.4.1-2.7-.3-3.9-1.1v6.1c0 5.6-6.1 7.4-9.1 3.3-1.9-2.7-.8-7.4 3.7-7.5v3.3c-.4.1-.8.2-1.2.4-1.2.5-1.4 2.3-.4 3.1 1.1.9 3 .2 3.2-1.6V3z"/></svg></a>
+    </div>
+    <p class="fc-line">Ammar Khan · Founder of CGHEVEN and HavenPlayer · <a href="mailto:contact@cgheven.com">contact@cgheven.com</a> · &copy; <span id="year">2026</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

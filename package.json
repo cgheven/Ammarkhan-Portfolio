@@ -1,0 +1,5 @@
+{
+  "name": "ammar-khan-portfolio",
+  "private": true,
+  "scripts": { "dev": "node server.mjs" }
+}
